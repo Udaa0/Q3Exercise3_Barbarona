@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id = "Random"></p>
+    <script>
+        var a = Math.floor(Math.random() * 1000);
+        var hundreds = Math.floor(a / 100) * 100;
+        var tens = Math.floor((a % 100) / 10) * 10;
+        var ones = a % 10;
+
+        var x = new Date();
+
+        document.getElementById("Random").innerHTML = "Randomly generated number: " + a + "<br>" + "<br>" + "Breakdown: " + hundreds + 
+        ", " + tens + ", " + ones + "<br>" + "<br>" + "Date of Printing: " + x;
+    </script>
+</body>
+</html>
